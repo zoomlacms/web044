@@ -1,0 +1,211 @@
+﻿{ZL.Source id="咨询模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="咨询模型数据源标签" FD="Title" page="0"/}</title>
+<meta name="Keywords" content="{SField sid="咨询模型数据源标签" FD="Tagkey" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script type="text/javascript" src="{$CssDir/}js/jquery.SuperSlide2.js"></script>
+<style>
+.downcount{ display:none;}
+</style>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="list_img2"></div>
+<div class="news_body">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<div class="breadcrumb1">
+<ol class="breadcrumb pull-left">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="咨询模型数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ol><!--面包屑导航结束 -->
+<div class="bdsharebuttonbox pull-right"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<div class="clearfix"></div>
+</div>
+<div class="myContent_l">
+<h1>{SField sid="咨询模型数据源标签" FD="Title" page="0"/}</h1>
+<div class="myAbbr">
+<span id="CreateTime">发布时间：{ZL:FormatDate({SField sid="咨询模型数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/}</span> 
+<span id="Hits">浏览次数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="咨询模型数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></span>
+</div>
+<div class="myContent">
+<table class="table table-bordered">
+<tr>
+<td style="width:180px; vertical-align:middle; text-align:right;">产品名称：</td>
+<td>{SField sid="咨询模型数据源标签" FD="Title" page="0"/}</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; text-align:right;">类别编号：</td>
+<td>{SField sid="咨询模型数据源标签" FD="lbbh" page="0"/}</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; text-align:right;">类别名称：</td>
+<td>{SField sid="咨询模型数据源标签" FD="lbmc" page="0"/}</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; text-align:right;">产品编号：</td>
+<td>{SField sid="咨询模型数据源标签" FD="cpbh" page="0"/}</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; text-align:right;">参考报价：</td>
+<td>{SField sid="咨询模型数据源标签" FD="skbj" page="0"/}万元</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; text-align:right;">产品收益：</td>
+<td>{SField sid="咨询模型数据源标签" FD="cpsy" page="0"/}</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; text-align:right;">下载：</td>
+<td>{ZL:GetDownLink({SField sid="文章模型数据源标签" FD="GeneralID" page="0"/},xz)/}</td>
+</tr>
+</table>
+</div>
+<div class="iframe_comm">
+<iframe id="comm_ifr" scrolling="no" onload="this.height = $(this).contents().height() + 'px';" src="/Comments/CommentFor.aspx?ID={SField sid="咨询模型数据源标签" FD="GeneralID"/}" width="100%" align="middle" height="100%" frameborder="0"></iframe>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+<div class="list_title_r_new">
+<h2>图片新闻</h2>
+<ul class="list-unstyled">
+{ZL.Label id="输出推荐文章_图片标题" NodeID="2" TitleNum="10" ShowNum="6" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="list_title_r_new1">
+<h2>热门资讯榜</h2>
+<ul class="list-unstyled">
+{ZL.Label id="输出文章点击数_标题" NodeID="2" TitleNum="30" ShowNum="9" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script type="text/javascript" src="/JS/Controls/ZL_Dialog.js"></script>
+<script>
+$().ready(function(e) {
+	if($("#asc span").html()=="")
+		$("#asc span").html("没有了");
+	if($("#desc span").html()=="")
+		$("#desc span").html("没有了");
+});
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+function initCommInfo(div){
+	$(".Assis_Div").html("");
+$(".Assis_Div").html(div);
+}
+function ContentAssist(flag){
+$("#comm_ifr")[0].contentWindow.ContentAssist(flag);
+}
+//弹出登录框
+var loginDiag = new ZL_Dialog();
+function checkLogin() {
+loginDiag.title = "用户登录";
+loginDiag.url = "/login_Ajax.aspx";
+loginDiag.ShowModal();
+}
+function LoginSuccess(){
+	window.location=location;
+}
+
+$(".nav li").hover(function(){
+	if($(this).find(".sub_nav")){
+		$(".nav_bg").show();
+		$(this).find(".sub_nav").show();
+		}},function(){
+		$(this).find(".sub_nav").hide();
+		$(".nav_bg").hide();
+		
+		
+});
+
+
+function shoucang(sTitle,sURL) 
+{ 
+try 
+{ 
+window.external.addFavorite(sURL, sTitle); 
+} 
+catch (e) 
+{ 
+try 
+{ 
+window.sidebar.addPanel(sTitle, sURL, ""); 
+} 
+catch (e) 
+{ 
+alert("加入收藏失败，请使用Ctrl+D进行添加"); 
+} 
+} 
+} 
+
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+	if(IsPC())
+		$(".p_num_a").attr("href","javascript:alert('请用手机直接拨打400-5608879')");
+
+$().ready(function(){
+    var unm='{ZL:GetuserName()/}'
+	if(unm!='')
+	{
+		$(".home_top_a").html("{ZL:GetuserName()/}");
+		$(".home_top_a1").text("退出").attr("href","/User/Logout.aspx");
+	}
+		
+});
+</script>

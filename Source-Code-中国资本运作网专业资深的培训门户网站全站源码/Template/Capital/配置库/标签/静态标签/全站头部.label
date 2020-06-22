@@ -1,0 +1,162 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>839</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="home_top"&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-7 col-md-4 col-sm-3 col-xs-12"&gt;
+&lt;p&gt;您好，欢迎访问中国资本运作网！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-5 col-md-6 col-sm-5 col-xs-12"&gt;
+&lt;div class=" pull-right"&gt;
+&lt;a href="/User/" class="home_top_a"&gt;登录&lt;/a&gt;&lt;a href="/User/Register.aspx" class="home_top_a1"&gt;注册&lt;/a&gt;&lt;a href="/PayOnline/SelectPayPlat.aspx"&gt;我要充值&lt;/a&gt;&lt;a href="javascript:void(0)" onclick="shoucang(document.title,window.location)"&gt;加入收藏&lt;/a&gt;&lt;a href="{ZL:GetInfoUrl(9)/}"&gt;网站介绍&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(53)/}"&gt;&lt;span class="fa fa-caret-square-o-right"&gt;&lt;/span&gt;视频中心&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div class="search"&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"&gt;
+&lt;a href="/"&gt;&lt;img src="{$LogoUrl/}" class="img-responsive"/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 search_col"&gt;
+&lt;form action="/search/SearchList.aspx" method="get" target="_blank"&gt;
+&lt;div class="input-group pull-right" style="width:400px;"&gt;
+&lt;input name="keyword" type="text" placeholder="培训关键字或标题" id="TxtKeyword" class="form-control"/&gt;
+&lt;span class="input-group-btn"&gt;
+&lt;input type="submit" value="搜索" id="ButtonSo" class="btn btn-default" /&gt;
+&lt;/span&gt;
+&lt;div class="search_s"&gt;&lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 p_num text-right"&gt;咨询电话：&lt;a href="tel:400-5608879" class="home_top_l_a"&gt;400-5608879&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--顶部结束--&gt;
+&lt;div id="scolls"&gt;
+&lt;div class="home_nav"&gt;
+&lt;div class="navbar navbar-default"&gt;
+&lt;div class="navbar navbar-static-top" role="navigation"&gt;
+&lt;div class="container"&gt;
+&lt;div class=" navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="navbar-collapse collapse"&gt;
+&lt;ul class="nav navbar-nav nav_ul"&gt;
+&lt;li&gt;&lt;a href="/" class="home_nav_a"&gt;网站首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}" class="home_nav_a1"&gt;新闻资讯&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(11)/}"&gt;行业资讯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(12)/}"&gt;投融资资讯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(13)/}"&gt;并购重组资讯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(39)/}"&gt;培训资讯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(40)/}"&gt;咨询资讯&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=33&amp;NodeID=60" class="home_nav_a2"&gt;我要投资&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=33&amp;NodeID=60"&gt;投资项目填报&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=60"&gt;投资项目修改&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=60"&gt;投资项目预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(60)/}"&gt;投资项目展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(60)/}"&gt;融资项目搜索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=34&amp;NodeID=4" class="home_nav_a3"&gt;我要融资&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=34&amp;NodeID=4"&gt;融资项目填报&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=4"&gt;融资项目填报&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=4"&gt;融资项目预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}"&gt;融资项目展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(4)/}"&gt;投资项目搜索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=35&amp;NodeID=61" class="home_nav_a4"&gt;我要收购&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=35&amp;NodeID=61"&gt;收购项目填报&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=61"&gt;收购项目修改&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=61"&gt;收购项目预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(61)/}"&gt;收购项目展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(61)/}"&gt;出售项目搜索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=36&amp;NodeID=93" class="home_nav_a5"&gt;我要出售&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent1.aspx?ModelID=36&amp;NodeID=93"&gt;出售项目填报&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=93"&gt;出售项目修改&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyContent.aspx?NodeID=93"&gt;出售项目预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(93)/}"&gt;出售项目展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(93)/}"&gt;收购项目搜索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class="zixun_li"&gt;&lt;a href="{ZL:GetNodeLinkUrl(7)/}" class="home_nav_a6"&gt;咨询服务&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(23)/}"&gt;定制产品&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(4)/}"&gt;定制咨询产品流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent.aspx?ModelID=26&amp;NodeID=23"&gt;我要提交需求&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(25)/}"&gt;微咨询产品&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(5)/}"&gt;定制微咨询产品流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/AddContent.aspx?ModelID=26&amp;NodeID=25"&gt;我要提交需求&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(62)/}" class="home_nav_a7"&gt;商学院&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(62)/}"&gt;专业培训&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(63)/}"&gt;在线学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(9)/}" class="home_nav_a8"&gt;政策法规&lt;/a&gt;&lt;/li&gt;
+&lt;li class="about_li"&gt;&lt;a href="{ZL:GetInfoUrl(1)/}" class="home_nav_a9"&gt;关于我们&lt;/a&gt;
+&lt;ul class="list-unstyled sub_nav"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(9)/}"&gt;网站介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(32)/}"&gt;专家团队&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(50)/}"&gt;战略合作合伙&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(36)/}"&gt;成功案例&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(6)/}"&gt;诚聘英才&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(7)/}"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(8)/}"&gt;汇款地址&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="nav_bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 导航到此结束 --&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

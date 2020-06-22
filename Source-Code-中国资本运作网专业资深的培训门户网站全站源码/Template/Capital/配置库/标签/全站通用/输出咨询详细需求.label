@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>866</LabelID>
+    <LabelName>输出咨询详细需求</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,父节点ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Pub_zxxq</LabelTable>
+    <LabelField>email,Phone,szdf,xm,xqym,zxngfm</LabelField>
+    <LabelWhere>ID=@NodeID</LabelWhere>
+    <LabelOrder>PubAddTime DESC</LabelOrder>
+    <LabelContent> &lt;div class="table-responsive"&gt;
+      &lt;table class="table table-bordered"&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;th scope="row" class="con_demand_ys"&gt;姓名&lt;/th&gt;
+            &lt;td&gt;{Field="xm"/}&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope="row" class="con_demand_ys"&gt;联系电话&lt;/th&gt;
+            &lt;td&gt;{Field="Phone"/}&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope="row" class="con_demand_ys"&gt;Email&lt;/th&gt;
+            &lt;td&gt;{Field="email"/}&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope="row" class="con_demand_ys"&gt;所住地方&lt;/th&gt;
+            &lt;td&gt;{Field="szdf"/}&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope="row" class="con_demand_ys"&gt;咨询哪个方面&lt;/th&gt;
+            &lt;td&gt;{Field="zxngfm"/}l&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope="row" class="con_demand_ys"&gt;详细需求说明&lt;/th&gt;
+            &lt;td&gt;{Field="xqym"/}&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;&lt;!-- /.table-responsive --&gt;
+</LabelContent>
+    <LabelCount>0</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Capital</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

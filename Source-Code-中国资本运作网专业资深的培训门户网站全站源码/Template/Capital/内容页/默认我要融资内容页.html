@@ -1,0 +1,201 @@
+﻿{ZL.Source id="我要融资数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="我要融资数据源标签" FD="Title" page="0"/}</title>
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<meta name="Keywords" content="{SField sid="我要融资数据源标签" FD="Tagkey" page="0"/}">
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="list_img1"></div>
+
+<div class="list_trans">
+<div class="container">
+<ol class="breadcrumb breadcrumb1">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="我要融资数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ol>
+
+<div class="list_trans_xm">
+<div class="row">
+<div class="padding5">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding10">
+<div class="list_tracon">
+<h3 class=" text-center">{SField sid="我要融资数据源标签" FD="Title" page="0"/}</h3>
+<div class="myAbbr text-center">
+<span id="CreateTime">发布时间：{ZL:FormatDate({SField sid="我要融资数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/}</span> 
+<span id="Hits">浏览次数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="我要融资数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></span>
+</div>
+<div class="list_tracon_lx">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<img src="{ZL:GetPicUrl({SField sid="我要融资数据源标签" FD="slt" page="0"/})/}" alt="{SField sid="我要融资数据源标签" FD="Title" page="0"/}" class="img-responsive"/>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+<ul class="list-unstyled">
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">需求编号：<span>{SField sid="我要融资数据源标签" FD="xqbh" page="0"/}</span></li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">企业所处行业：<span>{SField sid="我要融资数据源标签" FD="qyscxy" page="0"/}</span></li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">企业所处阶段：<span>{SField sid="我要融资数据源标签" FD="qyscjd" page="0"/}</span></li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">企业规模：<span>{SField sid="我要融资数据源标签" FD="qygm" page="0"/}</span></li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">企业资本规划：<span>{SField sid="我要融资数据源标签" FD="qyzbgh" page="0"/}</span></li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">投资方式：<span>{SField sid="我要融资数据源标签" FD="tzfs" page="0"/}</span></li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">融资金额：<span>{ZL:GetMoney({SField sid="我要融资数据源标签" FD="rzje" page="0"/},2,1)/}万</span></li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="list_tracon_fx pull-right">
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<div class="list_trans_nr">
+<div class="bs-docs-section">
+<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home"  data-toggle="tab">介绍</a></li>
+<li role="presentation"><a href="#profile"  data-toggle="tab" >评论</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledBy="home-tab">
+<div class="procon_n">
+{SField sid="我要融资数据源标签" FD="gsgk" page="0"/}
+</div> 
+</div>
+<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledBy="profile-tab">
+<iframe id="comm_ifr" scrolling="no" onload="this.height = $(this).contents().height() + 'px';" src="/Comments/CommentFor.aspx?ID={SField sid="我要融资数据源标签" FD="GeneralID"/}" width="100%" align="middle"  frameborder="0" style="height:600px;"></iframe>  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding10 list_title_r">
+<div class="list_title_r_new">
+<h2>图片新闻</h2>
+<ul class="list-unstyled">
+{ZL.Label id="输出推荐文章_图片标题" NodeID="2" TitleNum="10" ShowNum="6" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="list_title_r_new1">
+<h2>热门资讯榜</h2>
+<ul class="list-unstyled">
+{ZL.Label id="输出文章点击数_标题" NodeID="2" TitleNum="30" ShowNum="9" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+$(".home_nav .nav li").hover(function(){
+	if($(this).find(".sub_nav")){
+		$(".nav_bg").show();
+		$(this).find(".sub_nav").show();
+		}},function(){
+		$(this).find(".sub_nav").hide();
+		$(".nav_bg").hide();
+		
+		
+});
+
+function shoucang(sTitle,sURL) 
+{
+	try 
+	{ 
+		window.external.addFavorite(sURL, sTitle); 
+	} 
+	catch (e) 
+	{ 
+		try 
+		{ 
+			window.sidebar.addPanel(sTitle, sURL, ""); 
+		} 
+		catch (e) 
+		{ 
+			alert("加入收藏失败，请使用Ctrl+D进行添加"); 
+		} 
+	} 
+}
+
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+	if(IsPC())
+		$(".p_num_a").attr("href","javascript:alert('请用手机直接拨打400-5608879')");
+		
+		function initCommInfo(div){
+	$(".Assis_Div").html("");
+$(".Assis_Div").html(div);
+}
+function ContentAssist(flag){
+$("#comm_ifr")[0].contentWindow.ContentAssist(flag);
+}
+//弹出登录框
+var loginDiag = new ZL_Dialog();
+function checkLogin() {
+loginDiag.title = "用户登录";
+loginDiag.url = "/login_Ajax.aspx";
+loginDiag.ShowModal();
+}
+function LoginSuccess(){
+	window.location=location;
+};
+
+$().ready(function(){
+var unm='{ZL:GetuserName()/}'
+	if(unm!='')
+	{
+		$(".home_top_a").html("{ZL:GetuserName()/}");
+		$(".home_top_a1").text("退出").attr("href","/User/Logout.aspx");
+	}
+});
+
+$().ready(function(e) {
+    
+});
+
+
+</script>

@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/Template/office/style/images/win8_symbol_140x140.png"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{$SiteName/}_首页</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<link href="{$CssDir/}style.css" type="text/css" rel="stylesheet" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{$CssDir/}js/jquery.js"></script>
+<script type="text/javascript" src="{$CssDir/}js/jquery.SuperSlide2.js"></script>
+<style>
+.home_wx span { display:block; width:48px; height:48px; background:url({$CssDir/}images/wx_logo.png) left no-repeat;}
+.home_wx { position:fixed; top:380px; right:0; z-index:9999;cursor:pointer;}
+</style>
+</head>
+<body>
+<div id="online_qq_layer">
+<div id="online_qq_tab">
+<a id="floatShow" style="display:block;" href="javascript:void(0);">收缩</a> 
+<a id="floatHide" style="display:none;" href="javascript:void(0);">展开</a>
+</div>
+<div id="onlineService">
+<div class="onlineMenu">
+<h3 class="tQQ">QQ在线客服</h3>
+<ul class="list-unstyled">
+<li class="tli zixun">在线咨询</li>
+<li><a href="http://wpa.qq.com/msgrd?v=3&uin=398663666&site=qq&menu=yes"><img src="{$CssDir/}images/pa.gif" width="74" height="22" alt="客服001" /></a></li>
+<li><a href="http://wpa.qq.com/msgrd?v=3&uin=398663666&site=qq&menu=yes"><img src="{$CssDir/}images/pa.gif" width="74" height="22" alt="客服002" /></a></li>
+</ul>
+</div>
+<div class="onlineMenu">
+<h3 class="tele">QQ在线客服</h3>
+<ul class="list-unstyled">
+<li class="tli phone"><a href="tel:400-5608879" class="home_top_l_a">400-5608879</a></li>
+</ul>
+</div>
+<div class="btmbg"></div>
+</div>
+</div><!--客服-->
+<div class="home_wx"><span></span><img style="display:none;" src="{$CssDir/}images/pic5.jpg" alt="微信" /></div>
+<div class="home_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 col-md-4 col-sm-3 col-xs-12">
+<p>您好，欢迎访问中国资本运作网！</p>
+</div>
+<div class="col-lg-5 col-md-6 col-sm-5 col-xs-12">
+<div class=" pull-right">
+<a href="/User/" class="home_top_a">登录</a>
+<a href="/User/Register.aspx" class="home_top_a1">注册</a>
+<a href="/PayOnline/SelectPayPlat.aspx">我要充值</a>
+<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>
+<a href="{ZL:GetInfoUrl(9)/}">网站介绍</a>
+<a href="{ZL:GetNodeLinkUrl(53)/}"><span class="fa fa-caret-square-o-right"></span>视频中心</a>
+</div>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="search">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/"><img src="{$LogoUrl/}" class="img-responsive"/></a>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 search_col">
+<form action="/search/SearchList.aspx" method="get" target="_blank">
+<div class="input-group pull-right" style="width:400px;">
+<input name="keyword" type="text" placeholder="培训关键字或标题" id="TxtKeyword" class="form-control"/>
+<span class="input-group-btn">
+<input type="submit" value="搜索" id="ButtonSo" class="btn btn-default" />
+</span>
+<div class="search_s"><span class="glyphicon glyphicon-search"></span></div>
+</div>
+</form>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 p_num text-right">咨询电话：<a href="tel:400-5608879" class="home_top_l_a">400-5608879</a></div>
+</div>
+</div>
+</div>
+<!--顶部结束-->
+<div id="scolls">
+<div class="home_nav">
+<div class="navbar navbar-default">
+<div class="navbar navbar-static-top" role="navigation">
+<div class="container">
+<div class=" navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav nav_ul">
+<li><a href="/" class="home_nav_a">网站首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(2)/}" class="home_nav_a1">新闻资讯</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="{ZL:GetNodeLinkUrl(11)/}">行业资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(12)/}">投融资资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(13)/}">并购重组资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(39)/}">培训资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(40)/}">咨询资讯</a></li>
+</ul>
+</li>
+<li><a href="/User/Content/AddContent1.aspx?ModelID=33&NodeID=60" class="home_nav_a2">我要投资</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="/User/Content/AddContent1.aspx?ModelID=33&NodeID=60">投资项目填报</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=60">投资项目修改</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=60">投资项目预览</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(60)/}">投资项目展示</a></li>
+<li><a href="{ZL:GetNodeListUrl(60)/}">融资项目搜索</a></li>
+</ul>
+</li>
+<li><a href="/User/Content/AddContent1.aspx?ModelID=34&NodeID=4" class="home_nav_a3">我要融资</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="/User/Content/AddContent1.aspx?ModelID=34&NodeID=4">融资项目填报</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=4">融资项目填报</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=4">融资项目预览</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}">融资项目展示</a></li>
+<li><a href="{ZL:GetNodeListUrl(4)/}">投资项目搜索</a></li>
+</ul>
+</li>
+<li><a href="/User/Content/AddContent1.aspx?ModelID=35&NodeID=61" class="home_nav_a4">我要收购</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="/User/Content/AddContent1.aspx?ModelID=35&NodeID=61">收购项目填报</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=61">收购项目修改</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=61">收购项目预览</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(61)/}">收购项目展示</a></li>
+<li><a href="{ZL:GetNodeListUrl(61)/}">出售项目搜索</a></li>
+</ul>
+</li>
+<li><a href="/User/Content/AddContent1.aspx?ModelID=36&NodeID=93" class="home_nav_a5">我要出售</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="/User/Content/AddContent1.aspx?ModelID=36&NodeID=93">出售项目填报</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=93">出售项目修改</a></li>
+<li><a href="/User/Content/MyContent.aspx?NodeID=93">出售项目预览</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(93)/}">出售项目展示</a></li>
+<li><a href="{ZL:GetNodeListUrl(93)/}">收购项目搜索</a></li>
+</ul>
+</li>
+<li class="zixun_li"><a href="{ZL:GetNodeLinkUrl(7)/}" class="home_nav_a6">咨询服务</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="{ZL:GetNodeLinkUrl(23)/}">定制产品</a></li>
+<li><a href="{ZL:GetInfoUrl(4)/}">定制咨询产品流程</a></li>
+<li><a href="/User/Content/AddContent.aspx?ModelID=26&NodeID=23">我要提交需求</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(25)/}">微咨询产品</a></li>
+<li><a href="{ZL:GetInfoUrl(5)/}">定制微咨询产品流程</a></li>
+<li><a href="/User/Content/AddContent.aspx?ModelID=26&NodeID=25">我要提交需求</a></li>
+</ul>
+</li>
+<li><a href="{ZL:GetNodeLinkUrl(62)/}" class="home_nav_a7">商学院</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="{ZL:GetNodeLinkUrl(62)/}">专业培训</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(63)/}">在线学习</a></li>
+</ul>
+</li>
+<li><a href="{ZL:GetNodeLinkUrl(9)/}" class="home_nav_a8">政策法规</a></li>
+<li class="about_li"><a href="{ZL:GetInfoUrl(1)/}" class="home_nav_a9">关于我们</a>
+<ul class="list-unstyled sub_nav">
+<li><a href="{ZL:GetInfoUrl(9)/}">网站介绍</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(32)/}">专家团队</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(50)/}">战略合作合伙</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(36)/}">成功案例</a></li>
+<li><a href="{ZL:GetInfoUrl(6)/}">诚聘英才</a></li>
+<li><a href="{ZL:GetInfoUrl(7)/}">联系我们</a></li>
+<li><a href="{ZL:GetInfoUrl(8)/}">汇款地址</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="nav_bg"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 导航到此结束 -->
+<div class="flu_carousel">
+<div class="container-fluid padding0">
+<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active pic1">
+<a href="#" target="_blank"></a>
+<div class="carousel-caption">
+<p class="p1">欢迎您来报名培训！</p>
+<p class="p2">走在成功的道路上，必须要有丰富的知识、</p>
+<p class="p3">开阔的视野，最终才能迈向成功。</p>
+</div>
+</div>
+<div class="item pic2">
+<a href="#" target="_blank "></a>
+<div class="carousel-caption">
+<p class="p1">中国资本运作网！</p>
+<p class="p2">因共同的目标走到一起，</p>
+<p class="p3">因梦想一起打造O2O资本运作平台。</p>
+</div>
+</div>
+<div class="item pic3">
+<a href="#" target="_blank"></a>
+<div class="carousel-caption">
+<p class="p1">大型的资本运作门户网站！</p>
+<p class="p2">努力拼搏，放飞梦想</p>
+<p class="p3">您的加入就是对我们最大的鼓励。</p>
+</div>
+</div>
+</div>
+<a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</div>
+<!--广告结束 -->
+<div class="info_center">
+<div class="container">
+<div class="row">
+<div class="bs-docs-section">
+<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<p class="p1">资讯快递 <span>/ INFORMATION CENTER</span></p>
+</div>
+<ul id="myTab" class="nav nav-tabs col-lg-8 col-md-8 col-sm-8 col-xs-12" role="tablist">
+<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">行业资讯</a></li>
+<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">培训咨询</a></li>
+<li role="presentation"><a href="#profile1" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">咨询资讯</a></li>
+</ul>
+<div class="clearfix"></div>   
+<div id="myTabContent" class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledBy="home-tab">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+{ZL.Label id="输出推荐文章_图片" NodeID="11" ShowNum="1" /}
+</div>
+<ul class="col-lg-8 col-md-4 col-sm-4 col-xs-12 list-unstyled">
+{ZL.Label id="输出文章_标题时间" NodeID="11" ShowNum="9" TitleNum="85" /}
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledBy="profile-tab">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+{ZL.Label id="输出推荐文章_图片" NodeID="12" ShowNum="1" /}
+</div>
+<ul class="col-lg-8 col-md-4 col-sm-4 col-xs-12 list-unstyled">
+{ZL.Label id="输出文章_标题时间" NodeID="12" ShowNum="9" TitleNum="85" /}
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="profile1" aria-labelledBy="profile-tab">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+{ZL.Label id="输出推荐文章_图片" NodeID="13" ShowNum="1" /}
+</div>
+<ul class="col-lg-8 col-md-4 col-sm-4 col-xs-12 list-unstyled">
+{ZL.Label id="输出文章_标题时间" NodeID="13" ShowNum="9" TitleNum="85" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container pub_class">
+<p class="pub_p1">公开课报名流程 <span>/ OPEN CLASS REGISTRATION POOCESS</span><a href="{ZL:GetNodeLinkUrl(62)/}" class="pull-right">点击查看更多的公开课>></a></p>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="pub_col">
+<p class="pub_p2"><i>01</i><img src="{$CssDir/}images/pub_img1.jpg" class="img-responsive"/></p>
+<p class="pub_p3 text-center">在线填写报表和企业基本信息</p>
+<p class="pub_p4">中国资本运作网会员专享报名通道，<br/>完全免费开放</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="pub_col">
+<p class="pub_p2"><i>02</i><img src="{$CssDir/}images/pub_img2.jpg" class="img-responsive"/></p>
+<p class="pub_p3 text-center">中国资本运作网专家进会诊</p>
+<p class="pub_p4">逾百名专家进行线上会诊，<br/>并提供可视的培训方案跟进企业培训需求。</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="pub_col">
+<p class="pub_p2"><i>03</i><img src="{$CssDir/}images/pub_img3.jpg" class="img-responsive"/></p>
+<p class="pub_p3 text-center">联络交流邀请约参训与上门交流</p>
+<p class="pub_p4">及时高效的为企业提供量身订制的培训服务。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container case">
+<div class="ca_div">
+<p class="text-center p1">课程列表</p>
+<a href="{ZL:GetNodeLinkUrl(37)/}" class="pull-right">More..</a>
+</div>
+</div>
+
+<div class="container">
+<div class="marqueeleft">
+<ul id="marquee1_1">
+{ZL.Label id="输出产品列表" NodeID="62" TitleNum="30" ShowNum="20" /}
+</ul>
+</div>
+</div>
+<!--产品列表结束-->
+<div class="info">
+<div class="container">
+<div class="ca_div">
+<p class="text-center p1">我要投资</p>
+<a href="{ZL:GetNodeLinkUrl(60)/}" class="pull-right">More..</a>
+</div>
+<div class="pro_list">
+<div class="row padding5">
+<ul class="list-unstyled">
+{ZL.Label id="输出我要投资列表页" NodeID="60" TitleNum="30" ShowNum="6" SysNum="170" /}
+</ul>
+</div>
+</div>
+<div class="ca_div">
+<p class="text-center p1">我要融资</p>
+<a href="{ZL:GetNodeLinkUrl(4)/}" class="pull-right">More..</a>
+</div>
+<div class="pro_list">
+<div class="row padding5">
+<ul class="list-unstyled">
+{ZL.Label id="输出我要融资列表页" NodeID="4" TitleNum="30" ShowNum="6" SysNum="170" /}
+</ul>
+</div>
+</div>
+<div class="ca_div">
+<p class="text-center p1">我要收购</p>
+<a href="{ZL:GetNodeLinkUrl(61)/}" class="pull-right">More..</a>
+</div>
+<div class="pro_list">
+<div class="row padding5">
+<ul class="list-unstyled">
+{ZL.Label id="输出我要收购列表页" NodeID="61" TitleNum="30" ShowNum="6" SysNum="170" /}
+</ul>
+</div>
+</div>
+<div class="ca_div">
+<p class="text-center p1">我要出售</p>
+<a href="{ZL:GetNodeLinkUrl(93)/}" class="pull-right">More..</a>
+</div>
+<div class="pro_list">
+<div class="row padding5">
+<ul class="list-unstyled">
+{ZL.Label id="输出我要出售列表页" NodeID="93" TitleNum="30" ShowNum="6" SysNum="170" /}
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<!--资讯专区结束-->
+<div class="container">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<img src="{$CssDir/}images/person_icon.jpg" class="img-responsive"/>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 online">
+<p class="p1">专业级培训与企业服务-全程 专家保障成长无忧</p>
+<ul class="list-unstyled">
+<li>与多名业内专家签订协议，确保可按客户需求提供持续稳定的服务，更有自主明星团队主持培训！</li>
+<li>服务也“三包”！商业会员期限内产品提供随到随修、随到随换的周到便捷服务 </li>
+<li>定期回访客户，构建形成完善的售后服务体系，客户满意率逐年提高</li>
+</ul>
+<div class="link_a">
+<p class="p2"><a  href="http://wpa.qq.com/msgrd?v=3&uin=398663666&site=qq&menu=yes" class="a1">定制咨询</a></p>
+<p class="p3"><a  href="{ZL:GetNodeListUrl(6)/}" class="a2">在线留言</a></p>
+</div>
+</div>
+</div>
+
+<div class="scr_pic" id="marquee1">
+<div class="container">
+<p class="scr_m">合作伙伴<a href="{ZL:GetNodeLinkUrl(51)/}" class="pull-right">MORE+</a></p>
+<div class="clearfix"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 colfriend">
+<div class="mr_frbox">
+<div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+<img class="mr_frBtnL prev" src="{$CssDir/}images/scroll_left.jpg" />
+</div>
+<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 mr_frUl">
+<ul id="mr_fu">
+{ZL.Label id="输出友情链接列表_标题图片" NodeID="51" TitleNum="20" ShowNum="20" /}
+</ul>
+</div>
+<ul id="marquee1_2" class="hidden"></ul>
+<div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+<img class="mr_frBtnR next" src="{$CssDir/}images/scroll_right.jpg" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="friendy_link">
+<div class="container">
+<p>友情链接<a href="{ZL:GetNodeLinkUrl(59)/}" class="pull-right">更多>></a></p>
+<div>
+{ZL.Label id="输出友情链接列表_标题" NodeID="59" TitleNum="40" ShowNum="20" /}
+</div>
+</div>
+</div>
+
+<div class="home_page">
+<p class="text-center">
+<a href="{ZL:GetInfoUrl(1)/}">关于我们</a>
+<a href="{ZL:GetInfoUrl(7)/}">联系我们</a>
+<a href="mailto:mail.hx008.com">公司邮箱</a>
+<a href="{ZL:GetInfoUrl(10)/}">使用条款</a>
+<a href="{ZL:GetInfoUrl(11)/}">诚聘精英</a>
+<a href="{ZL:GetInfoUrl(12)/}">法律顾问</a>
+<a href="{ZL:GetInfoUrl(13)/}">广告服务</a>
+<a href="{ZL:GetInfoUrl(1)/}">版权声明</a>
+</p>
+<div class="clearfix"></div> 
+{$Copyright/}
+</div>
+<!--友情链接结束-->
+<!--<div class="share">
+<p><a href="#"><span class="fa fa-weibo"></span><span>新浪</span></a></p>
+<p><a href="#"><span class="fa fa-renren"></span><span>人人</span></a></p>
+<p><a href="#"><span class="fa fa-weixin"></span><span>微信</span></a></p>
+<p><a href="#"><span class="fa fa-qq"></span><span>qq空间</span></a></p>
+<a href="#"><img src="{$CssDir/}images/consult.jpg" class="img-responsive"/></a>
+<a href="#"><img src="{$CssDir/}images/ol_service.jpg" class="img-responsive"/></a>
+</div>-->
+</body>
+</html>
+<script type="text/javascript">
+$(".home_nav .nav li").hover(function(){
+	if($(this).find(".sub_nav")){
+		$(".nav_bg").show();
+		$(this).find(".sub_nav").show();
+		}},function(){
+		$(this).find(".sub_nav").hide();
+		$(".nav_bg").hide();
+});
+
+
+$().ready(function(e) {
+	if(IsPC())
+		$(".home_top_l_a").attr("href","javascript:alert('请用手机直接拨打：0791-88888888')");
+    var unm='{ZL:GetuserName()/}'
+	if(unm!='')
+	{
+		$(".home_top_a").html("{ZL:GetuserName()/}");
+		$(".home_top_a1").text("退出").attr("href","/User/Logout.aspx");
+	}
+		
+});
+
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+
+//js无缝滚动代码
+function marquee(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+	if (direction == "up"){
+		if (obj2.offsetTop - obj.scrollTop <= 0){
+			obj.scrollTop -= (obj1.offsetHeight + 20);
+		}else{
+			var tmp = obj.scrollTop;
+			obj.scrollTop++;
+			if (obj.scrollTop == tmp){
+				obj.scrollTop = 1;
+			}
+		}
+	}else{
+		if (obj2.offsetWidth - obj.scrollLeft <= 0){
+			obj.scrollLeft -= obj1.offsetWidth;
+		}else{
+			obj.scrollLeft++;
+		}
+	}
+}
+
+function marqueeStart(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+
+	obj2.innerHTML = obj1.innerHTML;
+	var marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	obj.onmouseover = function(){
+		window.clearInterval(marqueeVar);
+	}
+	obj.onmouseout = function(){
+		marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	}
+}
+
+marqueeStart(1, "left");
+$(document).ready(function(){
+
+	$("#floatShow").bind("click",function(){
+	
+		$("#onlineService").animate({width:"show", opacity:"show"}, "normal" ,function(){
+			$("#onlineService").show();
+		});
+		
+		$("#floatShow").attr("style","display:none");
+		$("#floatHide").attr("style","display:block");
+		
+		return false;
+	});
+	
+	$("#online_qq_tab").bind("click",function(){
+	
+		$("#onlineService").animate({width:"hide", opacity:"hide"}, "normal" ,function(){
+			$("#onlineService").hide();
+		});
+		
+		$("#floatShow").attr("style","display:block");
+		$("#floatHide").attr("style","display:none");
+		
+		return false;
+	});
+  
+});
+
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+
+$(document).ready(function () {
+	
+	/* 图片滚动效果 */
+	$(".mr_frbox").slide({
+		titCell: "",
+		mainCell: ".mr_frUl ul",
+		autoPage: true,
+		effect: "leftLoop",
+		autoPlay: true,
+		vis: 5
+	});
+	
+});
+
+function shoucang(sTitle,sURL) 
+{ 
+try 
+{ 
+window.external.addFavorite(sURL, sTitle); 
+} 
+catch (e) 
+{ 
+try 
+{ 
+window.sidebar.addPanel(sTitle, sURL, ""); 
+} 
+catch (e) 
+{ 
+alert("加入收藏失败，请使用Ctrl+D进行添加"); 
+} 
+} 
+}
+$().ready(function(e) {
+    $(".home_wx").mouseover(function(){
+		$(".home_wx span").hide();
+		$(".home_wx img").show();
+	}).mouseout(function(){
+		$(".home_wx span").show();
+		$(".home_wx img").hide();
+	})
+});
+</script>

@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>873</LabelID>
+    <LabelName>友情链接根据父节点输出子节点列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ParentID,1,1,父节点ID|ShowNum,10,1,显示个数|TitleNum,20,1,标题长度</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName</LabelField>
+    <LabelWhere>ParentID=@ParentID</LabelWhere>
+    <LabelOrder>OrderID ASC</LabelOrder>
+    <LabelContent>&lt;ul class="list-unstyled friendy_links_ul"&gt;
+{Repeate}
+&lt;li class="friendy_links_li"&gt;
+  &lt;h2&gt;{Field="NodeName"/}&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}" class="pull-right"&gt;More+&lt;/a&gt;&lt;/h2&gt;
+  &lt;div class="row"&gt;
+{ZL.Label id="输出友情链接_标题图片" NodeID="{Field="NodeID"/}" TitleNum="@TitleNum" ShowNum="@ShowNum" /}
+  &lt;/div&gt;
+    &lt;div class="clearfix"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+{/Repeate}
+&lt;/ul&gt;</LabelContent>
+    <LabelCount>0</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Capital</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="User_PromotionPage, App_Web_aku3fss2" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

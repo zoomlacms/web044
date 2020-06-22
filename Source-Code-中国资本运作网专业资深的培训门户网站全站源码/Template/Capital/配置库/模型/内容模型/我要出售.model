@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>36</ModelID>
+    <ModelName>我要出售</ModelName>
+    <Description />
+    <TableName>ZL_C_wycs</TableName>
+    <ItemName>出售</ItemName>
+    <ItemUnit>篇</ItemUnit>
+    <ItemIcon>glyphicon glyphicon-tasks</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>内容页/默认我要出售内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail>0</Thumbnail>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

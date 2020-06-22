@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>894</LabelID>
+    <LabelName>输出收购的文章内容信息</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_wysg on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_wysg.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.CreateTime,{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_wysg.jyje,{table1}.dbo.ZL_C_wysg.mbqygm,{table1}.dbo.ZL_C_wysg.mbqyscjd,{table1}.dbo.ZL_C_wysg.mbqyscxy,{table1}.dbo.ZL_C_wysg.sgfs,{table1}.dbo.ZL_C_wysg.sgfzbgh,{table1}.dbo.ZL_C_wysg.xqbh,{table1}.dbo.ZL_C_wysg.slt</LabelField>
+    <LabelWhere>{table1}.dbo.ZL_CommonModel.GeneralID={$GetRequest(gid)$}</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;div class="list_tracon"&gt;
+&lt;h3 class=" text-center"&gt;{Field="Title"/}&lt;/h3&gt;
+&lt;div class="myAbbr text-center"&gt;
+&lt;span id="CreateTime"&gt;发布时间：{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/span&gt; 
+&lt;span id="Hits"&gt;浏览次数：&lt;SCRIPT language=javascript src="/Common/GetHits.aspx?id={Field="GeneralID"/}"&gt;&lt;/SCRIPT&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="list_tracon_lx"&gt;
+&lt;div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="slt"/})/}" alt="{Field="Title"/}" class="img-responsive"/&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;需求编号：&lt;span&gt;{Field="xqbh"/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;目标企业所处行业：&lt;span&gt;{Field="mbqyscxy"/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;目标企业所处阶段：&lt;span&gt;{Field="mbqyscjd"/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;目标企业规模：&lt;span&gt;{Field="mbqygm"/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;收购方资本规划：&lt;span&gt;{Field="sgfzbgh"/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;收购方式：&lt;span&gt;{Field="sgfs"/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;交易金额：&lt;span&gt;{ZL:GetMoney({Field="jyje"/},2,1)/}万&lt;/span&gt;&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="list_tracon_fx pull-right"&gt;
+&lt;div class="bdsharebuttonbox"&gt;&lt;a href="#" class="bds_more" data-cmd="more"&gt;&lt;/a&gt;&lt;a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"&gt;&lt;/a&gt;&lt;a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"&gt;&lt;/a&gt;&lt;a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"&gt;&lt;/a&gt;&lt;a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"&gt;&lt;/a&gt;&lt;a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;script&gt;window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>0</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Capital</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

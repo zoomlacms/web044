@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="test_ClutAPI, App_Web_iywf0oen" enableEventValidation="false" viewStateEncryptionMode="Never" %>

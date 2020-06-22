@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>854</LabelID>
+    <LabelName>输出产品列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|TitleNum,30,1,标题长度|ShowNum,10,1,显示个数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_cpzs on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_cpzs.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_cpzs.dd,{table1}.dbo.ZL_C_cpzs.kksj,{table1}.dbo.ZL_C_cpzs.pic,{table1}.dbo.ZL_C_cpzs.price</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) And Status=99 And ModelID=26</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;
+&lt;a class="pic" href="{ZL:GetLastinfo(8)/}?price={Field="price"/}" title="{Field="Title"/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" class="img-responsive" alt="{Field="Title"/}" onerror="javascript:this.src='/Images/nopic.gif';" /&gt;&lt;/a&gt;
+&lt;div class="txt"&gt;
+&lt;h2 class="p1"&gt;开课时间：{ZL:FormatDate({Field="kksj"/},yyyy-MM-dd)/}&lt;/h2&gt;
+&lt;p class="p2"&gt;&lt;a href="{ZL:GetLastinfo(8)/}" title="{Field="Title"/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;&lt;/p&gt;
+&lt;p class="p3"&gt;价格：{ZL:GetMoney({Field="price"/},2,1)/} /人&lt;span class="pull-right"&gt;地点：{Field="dd"/}&lt;/span&gt;&lt;/p&gt;
+&lt;div class="a1 text-right"&gt;&lt;a href="{ZL:GetLastinfo(8)/}?price={Field="price"/}" class="btn btn-warning"&gt;查看详情&lt;/a&gt;&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Capital</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

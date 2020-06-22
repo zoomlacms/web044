@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>35</ModelID>
+    <ModelName>我要收购</ModelName>
+    <Description />
+    <TableName>ZL_C_wysg</TableName>
+    <ItemName>收购</ItemName>
+    <ItemUnit>篇</ItemUnit>
+    <ItemIcon>glyphicon glyphicon-th-list</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>内容页/默认我要收购内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail>0</Thumbnail>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

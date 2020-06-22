@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Panoramic3D_LoadPanoramic, App_Web_k3pk3xo3" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

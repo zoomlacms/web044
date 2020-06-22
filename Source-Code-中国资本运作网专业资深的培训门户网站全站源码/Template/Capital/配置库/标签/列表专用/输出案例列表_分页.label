@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>859</LabelID>
+    <LabelName>输出案例列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示个数|TitleNum,30,1,标题长度</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_al on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_al.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_al.jd,{table1}.dbo.ZL_C_al.nhls,{table1}.dbo.ZL_C_al.qx,{table1}.dbo.ZL_C_al.tzje</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) And {table1}.dbo.ZL_CommonModel.ModelID=27 and status=99</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;table class="table"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;span class="glyphicon glyphicon-th-list"&gt;&lt;/span&gt;公司名&lt;/th&gt;
+&lt;th&gt;&lt;span class="fa fa-jpy"&gt;&lt;/span&gt;投资金额&lt;/th&gt;
+&lt;th&gt;&lt;span class="fa fa-line-chart"&gt;&lt;/span&gt;年化利率&lt;/th&gt;
+&lt;th&gt;&lt;span class="fa fa-clock-o"&gt;&lt;/span&gt;期限&lt;/th&gt;
+&lt;th class="text-center"&gt;&lt;span class="fa fa-spinner"&gt;&lt;/span&gt;进度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  {Repeate}
+  &lt;tr&gt;
+    &lt;td&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;{ZL:GetMoney({Field="tzje"/},2,)/}万元&lt;/td&gt;
+    &lt;td&gt;{ZL:GetMoney({Field="nhls"/},0,)/}%&lt;/td&gt;
+    &lt;td&gt;{Field="qx"/}&lt;/td&gt;
+    &lt;td&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" class="btn btn-warning"&gt;{Field="jd"/}&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  {/Repeate}
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+{ZL.Page id="大图标响应式列表分页v3"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Capital</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>
